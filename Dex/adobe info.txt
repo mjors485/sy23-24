@@ -1,0 +1,13 @@
+Photoshop
+Name: Adobe Photoshop
+Released: February 19, 1990
+Purpose: Photo Editing Software
+Developer: Thomas and John Knoll
+Latest Version: 25.3.1
+
+Illustrator
+Name: Adobe Illustrator
+Released: March 19, 1987
+Purpose: 
+Developer: 
+Latest Version: 
