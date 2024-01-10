@@ -1,13 +1,69 @@
-Photoshop
+1. Photoshop
 Name: Adobe Photoshop
-Released: February 19, 1990
+Released: February 1990
 Purpose: Photo Editing Software
 Developer: Thomas and John Knoll
 Latest Version: 25.3.1
 
-Illustrator
+2. Illustrator
 Name: Adobe Illustrator
-Released: March 19, 1987
-Purpose: 
-Developer: 
-Latest Version: 
+Released: March 1987
+Purpose: Vector Illustration Graphics
+Developer: John Warnock
+Latest Version: 28.1
+
+3. After Effects
+Name: Adobe After Effects
+Released: January 1993
+Purpose: Post Production Effects
+Developer: Company of Science and Art (CoSA)
+Latest Version: 24.1
+
+4. InDesign
+Name: Adobe InDesign
+Released: August 1999
+Purpose: Publishing and Layout
+Developer: Company of Science and Art (CoSA)
+Latest Version: 24.1
+
+5. Premiere Pro
+Name: Adobe Premiere Pro
+Released: September 2003
+Purpose: Video Editing Software
+Developer: Adobe Inc.
+Latest Version: 19.1
+
+6. XD
+Name: Adobe XD
+Released: March 2016
+Purpose: User Interface and Wireframes
+Developer: Adobe Inc.
+Latest Version: 57
+
+7. Lightroom
+Name: Adobe Lightroom
+Released: February 2007
+Purpose: Photo Editing and Sharing
+Developer: Mark Hamburg
+Latest Version: 13.1
+
+8. Audition
+Name: Adobe Audition
+Released: August 2003
+Purpose: Creating and Editing Audio
+Developer: Syntrillium Software
+Latest Version: 24.0
+
+9. Dreamweaver
+Name: Adobe Dreamweaver
+Released: December 1997
+Purpose: Build and Publish Web Pages
+Developer: Macromedia
+Latest Version: 21.3
+
+10. Animate
+Name: Adobe Animate
+Released: May 1996
+Purpose: 2D Animation
+Developer: Adobe Inc.
+Latest Version: 24.0
