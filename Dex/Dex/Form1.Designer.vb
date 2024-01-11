@@ -29,15 +29,16 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Field1 = New System.Windows.Forms.TextBox()
+        Me.Field2 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Field3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Field4 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Field5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -62,17 +63,18 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PictureBox1
         '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(132, 42)
         Me.PictureBox1.Name = "PictureBox1"
@@ -90,19 +92,19 @@ Partial Class Form1
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Name"
         '
-        'TextBox1
+        'Field1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(132, 181)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(186, 27)
-        Me.TextBox1.TabIndex = 3
+        Me.Field1.Location = New System.Drawing.Point(132, 181)
+        Me.Field1.Name = "Field1"
+        Me.Field1.Size = New System.Drawing.Size(186, 27)
+        Me.Field1.TabIndex = 3
         '
-        'TextBox2
+        'Field2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(132, 214)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(186, 27)
-        Me.TextBox2.TabIndex = 5
+        Me.Field2.Location = New System.Drawing.Point(132, 214)
+        Me.Field2.Name = "Field2"
+        Me.Field2.Size = New System.Drawing.Size(186, 27)
+        Me.Field2.TabIndex = 5
         '
         'Label2
         '
@@ -113,12 +115,12 @@ Partial Class Form1
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Released"
         '
-        'TextBox3
+        'Field3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(132, 247)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(186, 27)
-        Me.TextBox3.TabIndex = 7
+        Me.Field3.Location = New System.Drawing.Point(132, 247)
+        Me.Field3.Name = "Field3"
+        Me.Field3.Size = New System.Drawing.Size(186, 27)
+        Me.Field3.TabIndex = 7
         '
         'Label3
         '
@@ -129,12 +131,12 @@ Partial Class Form1
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Purpose"
         '
-        'TextBox4
+        'Field4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(132, 280)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(186, 27)
-        Me.TextBox4.TabIndex = 9
+        Me.Field4.Location = New System.Drawing.Point(132, 280)
+        Me.Field4.Name = "Field4"
+        Me.Field4.Size = New System.Drawing.Size(186, 27)
+        Me.Field4.TabIndex = 9
         '
         'Label4
         '
@@ -145,12 +147,12 @@ Partial Class Form1
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Developer"
         '
-        'TextBox5
+        'Field5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(132, 313)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(186, 27)
-        Me.TextBox5.TabIndex = 11
+        Me.Field5.Location = New System.Drawing.Point(132, 313)
+        Me.Field5.Name = "Field5"
+        Me.Field5.Size = New System.Drawing.Size(186, 27)
+        Me.Field5.TabIndex = 11
         '
         'Label5
         '
@@ -161,20 +163,24 @@ Partial Class Form1
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Latest Version"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.Field5)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Field4)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Field3)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Field2)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Field1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -195,13 +201,14 @@ Partial Class Form1
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Field1 As TextBox
+    Friend WithEvents Field2 As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Field3 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Field4 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Field5 As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
