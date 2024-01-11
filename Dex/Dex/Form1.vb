@@ -33,4 +33,10 @@ Public Class Form1
         outFile.WriteLine(PictureBox1.ImageLocation)
         outFile.Close()
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim inFile As New StreamReader("data.txt")
+        Field1.Text = inFile.ReadToEnd
+        inFile.Close()
+    End Sub
 End Class
