@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FIleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -39,6 +38,10 @@ Partial Class Form1
         Me.Field5 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.FirstButton = New System.Windows.Forms.Button()
+        Me.PrevButton = New System.Windows.Forms.Button()
+        Me.NextButton = New System.Windows.Forms.Button()
+        Me.LastButton = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -63,19 +66,18 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(132, 42)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(186, 124)
@@ -167,11 +169,51 @@ Partial Class Form1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'FirstButton
+        '
+        Me.FirstButton.Location = New System.Drawing.Point(341, 42)
+        Me.FirstButton.Name = "FirstButton"
+        Me.FirstButton.Size = New System.Drawing.Size(94, 29)
+        Me.FirstButton.TabIndex = 12
+        Me.FirstButton.Text = "First"
+        Me.FirstButton.UseVisualStyleBackColor = True
+        '
+        'PrevButton
+        '
+        Me.PrevButton.Location = New System.Drawing.Point(341, 77)
+        Me.PrevButton.Name = "PrevButton"
+        Me.PrevButton.Size = New System.Drawing.Size(94, 29)
+        Me.PrevButton.TabIndex = 13
+        Me.PrevButton.Text = "Prev"
+        Me.PrevButton.UseVisualStyleBackColor = True
+        '
+        'NextButton
+        '
+        Me.NextButton.Location = New System.Drawing.Point(341, 112)
+        Me.NextButton.Name = "NextButton"
+        Me.NextButton.Size = New System.Drawing.Size(94, 29)
+        Me.NextButton.TabIndex = 14
+        Me.NextButton.Text = "Next"
+        Me.NextButton.UseVisualStyleBackColor = True
+        '
+        'LastButton
+        '
+        Me.LastButton.Location = New System.Drawing.Point(341, 147)
+        Me.LastButton.Name = "LastButton"
+        Me.LastButton.Size = New System.Drawing.Size(94, 29)
+        Me.LastButton.TabIndex = 15
+        Me.LastButton.Text = "Last"
+        Me.LastButton.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.LastButton)
+        Me.Controls.Add(Me.NextButton)
+        Me.Controls.Add(Me.PrevButton)
+        Me.Controls.Add(Me.FirstButton)
         Me.Controls.Add(Me.Field5)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Field4)
@@ -211,4 +253,8 @@ Partial Class Form1
     Friend WithEvents Field5 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents FirstButton As Button
+    Friend WithEvents PrevButton As Button
+    Friend WithEvents NextButton As Button
+    Friend WithEvents LastButton As Button
 End Class

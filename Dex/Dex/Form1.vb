@@ -3,6 +3,8 @@ Imports System.Web
 
 Public Class Form1
     Dim records(50) As String
+    Dim count As Integer
+    Dim current As Integer
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
         Field1.Text = ""
         Field2.Text = ""
@@ -21,43 +23,76 @@ Public Class Form1
     End Sub
 
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+        Dim r As String
+        r += Field1.Text
+        r += "|"
+        r += Field2.Text
+        r += "|"
+        r += Field3.Text
+        r += "|"
+        r += Field4.Text
+        r += "|"
+        r += Field5.Text
+        r += "|"
+        r += PictureBox1.ImageLocation
+        records(current) = r
+        SaveToFile()
+    End Sub
+    Sub SaveToFile()
         Dim outFile As New StreamWriter("data.txt")
-        outFile.Write(Field1.Text)
-        outFile.Write("|")
-        outFile.Write(Field2.Text)
-        outFile.Write("|")
-        outFile.Write(Field3.Text)
-        outFile.Write("|")
-        outFile.Write(Field4.Text)
-        outFile.Write("|")
-        outFile.Write(Field5.Text)
-        outFile.Write("|")
-        outFile.WriteLine(PictureBox1.ImageLocation)
+        For index = 0 To count - 1
+            outFile.WriteLine(records(index))
+        Next
         outFile.Close()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If IO.File.Exists("data.txt") Then
             Dim inFile As New StreamReader("data.txt")
-            Dim idx As Integer = 0
             While (Not inFile.EndOfStream)
-                records(idx) = inFile.ReadLine
-                idx = idx + 1
+                records(count) = inFile.ReadLine
+                count = count + 1
             End While
             inFile.Close()
             ShowRecord(0)
         End If
     End Sub
     Public Sub ShowRecord(index As Integer)
-        Dim Fields() As String
-        Fields = records(index).Split("|")
-        Field1.Text = Fields(0)
-        Field2.Text = Fields(1)
-        Field3.Text = Fields(2)
-        Field4.Text = Fields(3)
-        Field5.Text = Fields(4)
-        If File.Exists(Fields(5)) Then
-            PictureBox1.Load(Fields(5))
+        If records(index) <> Nothing Then
+            Dim Fields() As String
+            Fields = records(index).Split("|")
+            Field1.Text = Fields(0)
+            Field2.Text = Fields(1)
+            Field3.Text = Fields(2)
+            Field4.Text = Fields(3)
+            Field5.Text = Fields(4)
+            If File.Exists(Fields(5)) Then
+                PictureBox1.Load(Fields(5))
+            End If
         End If
+    End Sub
+
+    Private Sub FirstButton_Click(sender As Object, e As EventArgs) Handles FirstButton.Click
+        current = 0
+        ShowRecord(current)
+    End Sub
+
+    Private Sub PrevButton_Click(sender As Object, e As EventArgs) Handles PrevButton.Click
+        If current > 0 Then
+            current = current - 1
+        End If
+        ShowRecord(current)
+    End Sub
+
+    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+        If current < count - 1 Then
+            current = current + 1
+        End If
+        ShowRecord(current)
+    End Sub
+
+    Private Sub LastButton_Click(sender As Object, e As EventArgs) Handles LastButton.Click
+        current = count - 1
+        ShowRecord(current)
     End Sub
 End Class
