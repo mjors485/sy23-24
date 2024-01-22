@@ -23,15 +23,15 @@ Latest Version: 24.1
 Name: Adobe InDesign
 Released: August 1999
 Purpose: Publishing and Layout
-Developer: Company of Science and Art (CoSA)
-Latest Version: 24.1
+Developer: Adobe Inc.
+Latest Version: 19.1
 
 5. Premiere Pro
 Name: Adobe Premiere Pro
 Released: September 2003
 Purpose: Video Editing Software
 Developer: Adobe Inc.
-Latest Version: 19.1
+Latest Version: 24.1
 
 6. XD
 Name: Adobe XD
