@@ -34,6 +34,9 @@ Partial Class Form1
         Me.oNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.oButton = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.ClickerControl3 = New Feb5.ClickerControl()
+        Me.ClickerControl2 = New Feb5.ClickerControl()
+        Me.ClickerControl1 = New Feb5.ClickerControl()
         CType(Me.bNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.oNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -135,11 +138,41 @@ Partial Class Form1
         Me.TextBox3.Size = New System.Drawing.Size(75, 22)
         Me.TextBox3.TabIndex = 8
         '
+        'ClickerControl3
+        '
+        Me.ClickerControl3.BackColor = System.Drawing.Color.Salmon
+        Me.ClickerControl3.increment = 5
+        Me.ClickerControl3.Location = New System.Drawing.Point(259, 266)
+        Me.ClickerControl3.Name = "ClickerControl3"
+        Me.ClickerControl3.Size = New System.Drawing.Size(150, 150)
+        Me.ClickerControl3.TabIndex = 14
+        '
+        'ClickerControl2
+        '
+        Me.ClickerControl2.BackColor = System.Drawing.Color.LightBlue
+        Me.ClickerControl2.increment = 1
+        Me.ClickerControl2.Location = New System.Drawing.Point(434, 266)
+        Me.ClickerControl2.Name = "ClickerControl2"
+        Me.ClickerControl2.Size = New System.Drawing.Size(150, 150)
+        Me.ClickerControl2.TabIndex = 13
+        '
+        'ClickerControl1
+        '
+        Me.ClickerControl1.BackColor = System.Drawing.Color.DarkSeaGreen
+        Me.ClickerControl1.increment = 1
+        Me.ClickerControl1.Location = New System.Drawing.Point(611, 266)
+        Me.ClickerControl1.Name = "ClickerControl1"
+        Me.ClickerControl1.Size = New System.Drawing.Size(150, 150)
+        Me.ClickerControl1.TabIndex = 12
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ClickerControl3)
+        Me.Controls.Add(Me.ClickerControl2)
+        Me.Controls.Add(Me.ClickerControl1)
         Me.Controls.Add(Me.oReset)
         Me.Controls.Add(Me.oNumericUpDown)
         Me.Controls.Add(Me.oButton)
@@ -174,4 +207,7 @@ Partial Class Form1
     Friend WithEvents oNumericUpDown As NumericUpDown
     Friend WithEvents oButton As Button
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents ClickerControl1 As ClickerControl
+    Friend WithEvents ClickerControl2 As ClickerControl
+    Friend WithEvents ClickerControl3 As ClickerControl
 End Class
