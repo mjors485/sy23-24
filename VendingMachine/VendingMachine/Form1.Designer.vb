@@ -32,10 +32,19 @@ Partial Class Form1
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.returnButton = New System.Windows.Forms.Button()
+        Me.nPictureBox = New System.Windows.Forms.PictureBox()
+        Me.qPictureBox = New System.Windows.Forms.PictureBox()
+        Me.diPictureBox = New System.Windows.Forms.PictureBox()
+        Me.dolPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.qPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.diPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dolPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'nButton
@@ -122,15 +131,75 @@ Partial Class Form1
         Me.Label1.ForeColor = System.Drawing.Color.Ivory
         Me.Label1.Location = New System.Drawing.Point(652, 239)
         Me.Label1.Name = "Label1"
+        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label1.Size = New System.Drawing.Size(113, 37)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Label1"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'returnButton
+        '
+        Me.returnButton.Location = New System.Drawing.Point(670, 291)
+        Me.returnButton.Name = "returnButton"
+        Me.returnButton.Size = New System.Drawing.Size(74, 23)
+        Me.returnButton.TabIndex = 9
+        Me.returnButton.Text = "Return"
+        Me.returnButton.UseVisualStyleBackColor = True
+        '
+        'nPictureBox
+        '
+        Me.nPictureBox.Image = CType(resources.GetObject("nPictureBox.Image"), System.Drawing.Image)
+        Me.nPictureBox.Location = New System.Drawing.Point(662, 327)
+        Me.nPictureBox.Name = "nPictureBox"
+        Me.nPictureBox.Size = New System.Drawing.Size(42, 43)
+        Me.nPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.nPictureBox.TabIndex = 10
+        Me.nPictureBox.TabStop = False
+        Me.nPictureBox.Visible = False
+        '
+        'qPictureBox
+        '
+        Me.qPictureBox.Image = CType(resources.GetObject("qPictureBox.Image"), System.Drawing.Image)
+        Me.qPictureBox.Location = New System.Drawing.Point(662, 376)
+        Me.qPictureBox.Name = "qPictureBox"
+        Me.qPictureBox.Size = New System.Drawing.Size(42, 43)
+        Me.qPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.qPictureBox.TabIndex = 11
+        Me.qPictureBox.TabStop = False
+        Me.qPictureBox.Visible = False
+        '
+        'diPictureBox
+        '
+        Me.diPictureBox.Image = CType(resources.GetObject("diPictureBox.Image"), System.Drawing.Image)
+        Me.diPictureBox.Location = New System.Drawing.Point(710, 327)
+        Me.diPictureBox.Name = "diPictureBox"
+        Me.diPictureBox.Size = New System.Drawing.Size(42, 43)
+        Me.diPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.diPictureBox.TabIndex = 12
+        Me.diPictureBox.TabStop = False
+        Me.diPictureBox.Visible = False
+        '
+        'dolPictureBox
+        '
+        Me.dolPictureBox.Image = CType(resources.GetObject("dolPictureBox.Image"), System.Drawing.Image)
+        Me.dolPictureBox.Location = New System.Drawing.Point(710, 376)
+        Me.dolPictureBox.Name = "dolPictureBox"
+        Me.dolPictureBox.Size = New System.Drawing.Size(42, 43)
+        Me.dolPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.dolPictureBox.TabIndex = 13
+        Me.dolPictureBox.TabStop = False
+        Me.dolPictureBox.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.dolPictureBox)
+        Me.Controls.Add(Me.diPictureBox)
+        Me.Controls.Add(Me.qPictureBox)
+        Me.Controls.Add(Me.nPictureBox)
+        Me.Controls.Add(Me.returnButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
@@ -146,6 +215,10 @@ Partial Class Form1
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.qPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.diPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dolPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -160,4 +233,9 @@ Partial Class Form1
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents returnButton As Button
+    Friend WithEvents nPictureBox As PictureBox
+    Friend WithEvents qPictureBox As PictureBox
+    Friend WithEvents diPictureBox As PictureBox
+    Friend WithEvents dolPictureBox As PictureBox
 End Class
