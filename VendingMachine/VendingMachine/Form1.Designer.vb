@@ -37,6 +37,22 @@ Partial Class Form1
         Me.qPictureBox = New System.Windows.Forms.PictureBox()
         Me.diPictureBox = New System.Windows.Forms.PictureBox()
         Me.dolPictureBox = New System.Windows.Forms.PictureBox()
+        Me.ProductControl1 = New VendingMachine.ProductControl()
+        Me.ProductControl2 = New VendingMachine.ProductControl()
+        Me.ProductControl3 = New VendingMachine.ProductControl()
+        Me.ProductControl4 = New VendingMachine.ProductControl()
+        Me.ProductControl5 = New VendingMachine.ProductControl()
+        Me.ProductControl6 = New VendingMachine.ProductControl()
+        Me.ProductControl7 = New VendingMachine.ProductControl()
+        Me.ProductControl8 = New VendingMachine.ProductControl()
+        Me.ProductControl9 = New VendingMachine.ProductControl()
+        Me.ProductControl10 = New VendingMachine.ProductControl()
+        Me.ProductControl11 = New VendingMachine.ProductControl()
+        Me.ProductControl12 = New VendingMachine.ProductControl()
+        Me.ProductControl13 = New VendingMachine.ProductControl()
+        Me.ProductControl14 = New VendingMachine.ProductControl()
+        Me.ProductControl15 = New VendingMachine.ProductControl()
+        Me.ProductControl16 = New VendingMachine.ProductControl()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,36 +65,36 @@ Partial Class Form1
         '
         'nButton
         '
-        Me.nButton.Location = New System.Drawing.Point(630, 90)
+        Me.nButton.Location = New System.Drawing.Point(598, 102)
         Me.nButton.Name = "nButton"
-        Me.nButton.Size = New System.Drawing.Size(74, 23)
+        Me.nButton.Size = New System.Drawing.Size(82, 39)
         Me.nButton.TabIndex = 0
         Me.nButton.Text = "Nickel"
         Me.nButton.UseVisualStyleBackColor = True
         '
         'diButton
         '
-        Me.diButton.Location = New System.Drawing.Point(710, 90)
+        Me.diButton.Location = New System.Drawing.Point(706, 102)
         Me.diButton.Name = "diButton"
-        Me.diButton.Size = New System.Drawing.Size(74, 23)
+        Me.diButton.Size = New System.Drawing.Size(82, 39)
         Me.diButton.TabIndex = 1
         Me.diButton.Text = "Dime"
         Me.diButton.UseVisualStyleBackColor = True
         '
         'qButton
         '
-        Me.qButton.Location = New System.Drawing.Point(630, 204)
+        Me.qButton.Location = New System.Drawing.Point(598, 242)
         Me.qButton.Name = "qButton"
-        Me.qButton.Size = New System.Drawing.Size(74, 23)
+        Me.qButton.Size = New System.Drawing.Size(82, 34)
         Me.qButton.TabIndex = 2
         Me.qButton.Text = "Quarter"
         Me.qButton.UseVisualStyleBackColor = True
         '
         'doButton
         '
-        Me.doButton.Location = New System.Drawing.Point(710, 204)
+        Me.doButton.Location = New System.Drawing.Point(706, 242)
         Me.doButton.Name = "doButton"
-        Me.doButton.Size = New System.Drawing.Size(74, 23)
+        Me.doButton.Size = New System.Drawing.Size(82, 34)
         Me.doButton.TabIndex = 3
         Me.doButton.Text = "Dollar"
         Me.doButton.UseVisualStyleBackColor = True
@@ -86,9 +102,9 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(630, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(598, 13)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(74, 72)
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 83)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
@@ -96,9 +112,9 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(710, 12)
+        Me.PictureBox2.Location = New System.Drawing.Point(706, 13)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(74, 72)
+        Me.PictureBox2.Size = New System.Drawing.Size(82, 83)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 5
         Me.PictureBox2.TabStop = False
@@ -106,9 +122,9 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(630, 126)
+        Me.PictureBox3.Location = New System.Drawing.Point(598, 153)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(74, 72)
+        Me.PictureBox3.Size = New System.Drawing.Size(82, 83)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 6
         Me.PictureBox3.TabStop = False
@@ -116,9 +132,9 @@ Partial Class Form1
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(710, 126)
+        Me.PictureBox4.Location = New System.Drawing.Point(706, 153)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(74, 72)
+        Me.PictureBox4.Size = New System.Drawing.Size(82, 83)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 7
         Me.PictureBox4.TabStop = False
@@ -127,21 +143,21 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 25.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Ivory
-        Me.Label1.Location = New System.Drawing.Point(652, 239)
+        Me.Label1.Location = New System.Drawing.Point(612, 294)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(113, 37)
+        Me.Label1.Size = New System.Drawing.Size(163, 51)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Label1"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'returnButton
         '
-        Me.returnButton.Location = New System.Drawing.Point(670, 291)
+        Me.returnButton.Location = New System.Drawing.Point(646, 361)
         Me.returnButton.Name = "returnButton"
-        Me.returnButton.Size = New System.Drawing.Size(74, 23)
+        Me.returnButton.Size = New System.Drawing.Size(90, 32)
         Me.returnButton.TabIndex = 9
         Me.returnButton.Text = "Return"
         Me.returnButton.UseVisualStyleBackColor = True
@@ -149,7 +165,7 @@ Partial Class Form1
         'nPictureBox
         '
         Me.nPictureBox.Image = CType(resources.GetObject("nPictureBox.Image"), System.Drawing.Image)
-        Me.nPictureBox.Location = New System.Drawing.Point(662, 327)
+        Me.nPictureBox.Location = New System.Drawing.Point(646, 412)
         Me.nPictureBox.Name = "nPictureBox"
         Me.nPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.nPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -160,7 +176,7 @@ Partial Class Form1
         'qPictureBox
         '
         Me.qPictureBox.Image = CType(resources.GetObject("qPictureBox.Image"), System.Drawing.Image)
-        Me.qPictureBox.Location = New System.Drawing.Point(662, 376)
+        Me.qPictureBox.Location = New System.Drawing.Point(646, 461)
         Me.qPictureBox.Name = "qPictureBox"
         Me.qPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.qPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -171,7 +187,7 @@ Partial Class Form1
         'diPictureBox
         '
         Me.diPictureBox.Image = CType(resources.GetObject("diPictureBox.Image"), System.Drawing.Image)
-        Me.diPictureBox.Location = New System.Drawing.Point(710, 327)
+        Me.diPictureBox.Location = New System.Drawing.Point(694, 412)
         Me.diPictureBox.Name = "diPictureBox"
         Me.diPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.diPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -182,7 +198,7 @@ Partial Class Form1
         'dolPictureBox
         '
         Me.dolPictureBox.Image = CType(resources.GetObject("dolPictureBox.Image"), System.Drawing.Image)
-        Me.dolPictureBox.Location = New System.Drawing.Point(710, 376)
+        Me.dolPictureBox.Location = New System.Drawing.Point(694, 461)
         Me.dolPictureBox.Name = "dolPictureBox"
         Me.dolPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.dolPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -190,11 +206,219 @@ Partial Class Form1
         Me.dolPictureBox.TabStop = False
         Me.dolPictureBox.Visible = False
         '
+        'ProductControl1
+        '
+        Me.ProductControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl1.Location = New System.Drawing.Point(12, 12)
+        Me.ProductControl1.Name = "ProductControl1"
+        Me.ProductControl1.ProductCount = 10
+        Me.ProductControl1.ProductID = "A1"
+        Me.ProductControl1.ProductImage = CType(resources.GetObject("ProductControl1.ProductImage"), System.Drawing.Image)
+        Me.ProductControl1.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl1.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl1.TabIndex = 14
+        '
+        'ProductControl2
+        '
+        Me.ProductControl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl2.Location = New System.Drawing.Point(157, 12)
+        Me.ProductControl2.Name = "ProductControl2"
+        Me.ProductControl2.ProductCount = 10
+        Me.ProductControl2.ProductID = "A2"
+        Me.ProductControl2.ProductImage = CType(resources.GetObject("ProductControl2.ProductImage"), System.Drawing.Image)
+        Me.ProductControl2.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl2.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl2.TabIndex = 15
+        '
+        'ProductControl3
+        '
+        Me.ProductControl3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl3.Location = New System.Drawing.Point(302, 12)
+        Me.ProductControl3.Name = "ProductControl3"
+        Me.ProductControl3.ProductCount = 10
+        Me.ProductControl3.ProductID = "A3"
+        Me.ProductControl3.ProductImage = CType(resources.GetObject("ProductControl3.ProductImage"), System.Drawing.Image)
+        Me.ProductControl3.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl3.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl3.TabIndex = 16
+        '
+        'ProductControl4
+        '
+        Me.ProductControl4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl4.Location = New System.Drawing.Point(447, 12)
+        Me.ProductControl4.Name = "ProductControl4"
+        Me.ProductControl4.ProductCount = 10
+        Me.ProductControl4.ProductID = "A4"
+        Me.ProductControl4.ProductImage = CType(resources.GetObject("ProductControl4.ProductImage"), System.Drawing.Image)
+        Me.ProductControl4.ProductPrice = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl4.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl4.TabIndex = 17
+        '
+        'ProductControl5
+        '
+        Me.ProductControl5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl5.Location = New System.Drawing.Point(447, 153)
+        Me.ProductControl5.Name = "ProductControl5"
+        Me.ProductControl5.ProductCount = 10
+        Me.ProductControl5.ProductID = "B4"
+        Me.ProductControl5.ProductImage = CType(resources.GetObject("ProductControl5.ProductImage"), System.Drawing.Image)
+        Me.ProductControl5.ProductPrice = New Decimal(New Integer() {250, 0, 0, 131072})
+        Me.ProductControl5.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl5.TabIndex = 21
+        '
+        'ProductControl6
+        '
+        Me.ProductControl6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl6.Location = New System.Drawing.Point(302, 153)
+        Me.ProductControl6.Name = "ProductControl6"
+        Me.ProductControl6.ProductCount = 10
+        Me.ProductControl6.ProductID = "B3"
+        Me.ProductControl6.ProductImage = CType(resources.GetObject("ProductControl6.ProductImage"), System.Drawing.Image)
+        Me.ProductControl6.ProductPrice = New Decimal(New Integer() {250, 0, 0, 131072})
+        Me.ProductControl6.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl6.TabIndex = 20
+        '
+        'ProductControl7
+        '
+        Me.ProductControl7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl7.Location = New System.Drawing.Point(157, 153)
+        Me.ProductControl7.Name = "ProductControl7"
+        Me.ProductControl7.ProductCount = 10
+        Me.ProductControl7.ProductID = "B2"
+        Me.ProductControl7.ProductImage = CType(resources.GetObject("ProductControl7.ProductImage"), System.Drawing.Image)
+        Me.ProductControl7.ProductPrice = New Decimal(New Integer() {250, 0, 0, 131072})
+        Me.ProductControl7.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl7.TabIndex = 19
+        '
+        'ProductControl8
+        '
+        Me.ProductControl8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl8.Location = New System.Drawing.Point(12, 153)
+        Me.ProductControl8.Name = "ProductControl8"
+        Me.ProductControl8.ProductCount = 10
+        Me.ProductControl8.ProductID = "B1"
+        Me.ProductControl8.ProductImage = CType(resources.GetObject("ProductControl8.ProductImage"), System.Drawing.Image)
+        Me.ProductControl8.ProductPrice = New Decimal(New Integer() {250, 0, 0, 131072})
+        Me.ProductControl8.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl8.TabIndex = 18
+        '
+        'ProductControl9
+        '
+        Me.ProductControl9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl9.Location = New System.Drawing.Point(447, 294)
+        Me.ProductControl9.Name = "ProductControl9"
+        Me.ProductControl9.ProductCount = 10
+        Me.ProductControl9.ProductID = "C4"
+        Me.ProductControl9.ProductImage = CType(resources.GetObject("ProductControl9.ProductImage"), System.Drawing.Image)
+        Me.ProductControl9.ProductPrice = New Decimal(New Integer() {100, 0, 0, 131072})
+        Me.ProductControl9.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl9.TabIndex = 25
+        '
+        'ProductControl10
+        '
+        Me.ProductControl10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl10.Location = New System.Drawing.Point(302, 294)
+        Me.ProductControl10.Name = "ProductControl10"
+        Me.ProductControl10.ProductCount = 10
+        Me.ProductControl10.ProductID = "C3"
+        Me.ProductControl10.ProductImage = CType(resources.GetObject("ProductControl10.ProductImage"), System.Drawing.Image)
+        Me.ProductControl10.ProductPrice = New Decimal(New Integer() {100, 0, 0, 131072})
+        Me.ProductControl10.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl10.TabIndex = 24
+        '
+        'ProductControl11
+        '
+        Me.ProductControl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl11.Location = New System.Drawing.Point(157, 294)
+        Me.ProductControl11.Name = "ProductControl11"
+        Me.ProductControl11.ProductCount = 10
+        Me.ProductControl11.ProductID = "C2"
+        Me.ProductControl11.ProductImage = CType(resources.GetObject("ProductControl11.ProductImage"), System.Drawing.Image)
+        Me.ProductControl11.ProductPrice = New Decimal(New Integer() {100, 0, 0, 131072})
+        Me.ProductControl11.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl11.TabIndex = 23
+        '
+        'ProductControl12
+        '
+        Me.ProductControl12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl12.Location = New System.Drawing.Point(12, 294)
+        Me.ProductControl12.Name = "ProductControl12"
+        Me.ProductControl12.ProductCount = 10
+        Me.ProductControl12.ProductID = "C1"
+        Me.ProductControl12.ProductImage = CType(resources.GetObject("ProductControl12.ProductImage"), System.Drawing.Image)
+        Me.ProductControl12.ProductPrice = New Decimal(New Integer() {100, 0, 0, 131072})
+        Me.ProductControl12.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl12.TabIndex = 22
+        '
+        'ProductControl13
+        '
+        Me.ProductControl13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl13.Location = New System.Drawing.Point(447, 435)
+        Me.ProductControl13.Name = "ProductControl13"
+        Me.ProductControl13.ProductCount = 10
+        Me.ProductControl13.ProductID = "D4"
+        Me.ProductControl13.ProductImage = CType(resources.GetObject("ProductControl13.ProductImage"), System.Drawing.Image)
+        Me.ProductControl13.ProductPrice = New Decimal(New Integer() {175, 0, 0, 131072})
+        Me.ProductControl13.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl13.TabIndex = 29
+        '
+        'ProductControl14
+        '
+        Me.ProductControl14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl14.Location = New System.Drawing.Point(302, 435)
+        Me.ProductControl14.Name = "ProductControl14"
+        Me.ProductControl14.ProductCount = 10
+        Me.ProductControl14.ProductID = "D3"
+        Me.ProductControl14.ProductImage = CType(resources.GetObject("ProductControl14.ProductImage"), System.Drawing.Image)
+        Me.ProductControl14.ProductPrice = New Decimal(New Integer() {175, 0, 0, 131072})
+        Me.ProductControl14.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl14.TabIndex = 28
+        '
+        'ProductControl15
+        '
+        Me.ProductControl15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl15.Location = New System.Drawing.Point(157, 435)
+        Me.ProductControl15.Name = "ProductControl15"
+        Me.ProductControl15.ProductCount = 10
+        Me.ProductControl15.ProductID = "D2"
+        Me.ProductControl15.ProductImage = CType(resources.GetObject("ProductControl15.ProductImage"), System.Drawing.Image)
+        Me.ProductControl15.ProductPrice = New Decimal(New Integer() {175, 0, 0, 131072})
+        Me.ProductControl15.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl15.TabIndex = 27
+        '
+        'ProductControl16
+        '
+        Me.ProductControl16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ProductControl16.Location = New System.Drawing.Point(12, 435)
+        Me.ProductControl16.Name = "ProductControl16"
+        Me.ProductControl16.ProductCount = 10
+        Me.ProductControl16.ProductID = "D1"
+        Me.ProductControl16.ProductImage = CType(resources.GetObject("ProductControl16.ProductImage"), System.Drawing.Image)
+        Me.ProductControl16.ProductPrice = New Decimal(New Integer() {175, 0, 0, 131072})
+        Me.ProductControl16.Size = New System.Drawing.Size(139, 135)
+        Me.ProductControl16.TabIndex = 26
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 618)
+        Me.Controls.Add(Me.ProductControl13)
+        Me.Controls.Add(Me.ProductControl14)
+        Me.Controls.Add(Me.ProductControl15)
+        Me.Controls.Add(Me.ProductControl16)
+        Me.Controls.Add(Me.ProductControl9)
+        Me.Controls.Add(Me.ProductControl10)
+        Me.Controls.Add(Me.ProductControl11)
+        Me.Controls.Add(Me.ProductControl12)
+        Me.Controls.Add(Me.ProductControl5)
+        Me.Controls.Add(Me.ProductControl6)
+        Me.Controls.Add(Me.ProductControl7)
+        Me.Controls.Add(Me.ProductControl8)
+        Me.Controls.Add(Me.ProductControl4)
+        Me.Controls.Add(Me.ProductControl3)
+        Me.Controls.Add(Me.ProductControl2)
+        Me.Controls.Add(Me.ProductControl1)
         Me.Controls.Add(Me.dolPictureBox)
         Me.Controls.Add(Me.diPictureBox)
         Me.Controls.Add(Me.qPictureBox)
@@ -238,4 +462,20 @@ Partial Class Form1
     Friend WithEvents qPictureBox As PictureBox
     Friend WithEvents diPictureBox As PictureBox
     Friend WithEvents dolPictureBox As PictureBox
+    Friend WithEvents ProductControl1 As ProductControl
+    Friend WithEvents ProductControl2 As ProductControl
+    Friend WithEvents ProductControl3 As ProductControl
+    Friend WithEvents ProductControl4 As ProductControl
+    Friend WithEvents ProductControl5 As ProductControl
+    Friend WithEvents ProductControl6 As ProductControl
+    Friend WithEvents ProductControl7 As ProductControl
+    Friend WithEvents ProductControl8 As ProductControl
+    Friend WithEvents ProductControl9 As ProductControl
+    Friend WithEvents ProductControl10 As ProductControl
+    Friend WithEvents ProductControl11 As ProductControl
+    Friend WithEvents ProductControl12 As ProductControl
+    Friend WithEvents ProductControl13 As ProductControl
+    Friend WithEvents ProductControl14 As ProductControl
+    Friend WithEvents ProductControl15 As ProductControl
+    Friend WithEvents ProductControl16 As ProductControl
 End Class
