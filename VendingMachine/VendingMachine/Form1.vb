@@ -50,4 +50,16 @@
             dolPictureBox.Visible = False
         End If
     End Sub
+
+    Private Sub buyButton_Click(sender As Object, e As EventArgs) Handles buyButton.Click
+        Select Case idTextBox.Text
+            Case ProductControl1.ProductID
+                ProductControl1.Buy()
+            Case 2
+
+            Case Else
+
+        End Select
+        ProductControl1.Buy()
+    End Sub
 End Class

@@ -11,4 +11,12 @@
         priceLabel.Text = ProductPrice.ToString("c2")
         ProductCount = 10
     End Sub
+    Public Sub Buy()
+        If ProductCount > 0 Then
+            ProductCount = ProductCount - 1
+        End If
+        If ProductCount = 0 Then
+            PictureBox1.Image = Nothing
+        End If
+    End Sub
 End Class

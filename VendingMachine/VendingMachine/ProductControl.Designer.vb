@@ -65,6 +65,7 @@ Partial Class ProductControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.priceLabel)
         Me.Controls.Add(Me.idLabel)
