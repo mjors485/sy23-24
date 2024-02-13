@@ -54,12 +54,57 @@
     Private Sub buyButton_Click(sender As Object, e As EventArgs) Handles buyButton.Click
         Select Case idTextBox.Text
             Case ProductControl1.ProductID
-                ProductControl1.Buy()
-            Case 2
-
-            Case Else
-
+                cs.Buy(ProductControl1)
+            Case ProductControl2.ProductID
+                cs.Buy(ProductControl2)
+            Case ProductControl3.ProductID
+                cs.Buy(ProductControl3)
+            Case ProductControl4.ProductID
+                cs.Buy(ProductControl4)
+            Case ProductControl5.ProductID
+                cs.Buy(ProductControl5)
+            Case ProductControl6.ProductID
+                cs.Buy(ProductControl6)
+            Case ProductControl7.ProductID
+                cs.Buy(ProductControl7)
+            Case ProductControl8.ProductID
+                cs.Buy(ProductControl8)
+            Case ProductControl9.ProductID
+                cs.Buy(ProductControl9)
+            Case ProductControl10.ProductID
+                cs.Buy(ProductControl10)
+            Case ProductControl11.ProductID
+                cs.Buy(ProductControl11)
+            Case ProductControl12.ProductID
+                cs.Buy(ProductControl12)
+            Case ProductControl13.ProductID
+                cs.Buy(ProductControl13)
+            Case ProductControl14.ProductID
+                cs.Buy(ProductControl14)
+            Case ProductControl15.ProductID
+                cs.Buy(ProductControl15)
+            Case ProductControl16.ProductID
+                cs.Buy(ProductControl16)
         End Select
-        ProductControl1.Buy()
+        Label1.Text = cs.total.ToString("C2")
+    End Sub
+
+    Private Sub ProductControl1_DispenseProduct(i As Image) Handles ProductControl1.DispenseProduct,
+        ProductControl2.DispenseProduct,
+        ProductControl3.DispenseProduct,
+        ProductControl4.DispenseProduct,
+        ProductControl5.DispenseProduct,
+        ProductControl6.DispenseProduct,
+        ProductControl7.DispenseProduct,
+        ProductControl8.DispenseProduct,
+        ProductControl9.DispenseProduct,
+        ProductControl10.DispenseProduct,
+        ProductControl11.DispenseProduct,
+        ProductControl12.DispenseProduct,
+        ProductControl13.DispenseProduct,
+        ProductControl14.DispenseProduct,
+        ProductControl15.DispenseProduct,
+        ProductControl16.DispenseProduct
+        productPictureBox.Image = i
     End Sub
 End Class

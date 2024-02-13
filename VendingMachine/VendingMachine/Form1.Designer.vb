@@ -38,6 +38,7 @@ Partial Class Form1
         Me.diPictureBox = New System.Windows.Forms.PictureBox()
         Me.dolPictureBox = New System.Windows.Forms.PictureBox()
         Me.buyButton = New System.Windows.Forms.Button()
+        Me.idTextBox = New System.Windows.Forms.TextBox()
         Me.ProductControl13 = New VendingMachine.ProductControl()
         Me.ProductControl14 = New VendingMachine.ProductControl()
         Me.ProductControl15 = New VendingMachine.ProductControl()
@@ -54,7 +55,7 @@ Partial Class Form1
         Me.ProductControl3 = New VendingMachine.ProductControl()
         Me.ProductControl2 = New VendingMachine.ProductControl()
         Me.ProductControl1 = New VendingMachine.ProductControl()
-        Me.idTextBox = New System.Windows.Forms.TextBox()
+        Me.productPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,6 +64,7 @@ Partial Class Form1
         CType(Me.qPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.diPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dolPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.productPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'nButton
@@ -219,6 +221,13 @@ Partial Class Form1
         Me.buyButton.TabIndex = 30
         Me.buyButton.Text = "Buy"
         Me.buyButton.UseVisualStyleBackColor = False
+        '
+        'idTextBox
+        '
+        Me.idTextBox.Location = New System.Drawing.Point(646, 524)
+        Me.idTextBox.Name = "idTextBox"
+        Me.idTextBox.Size = New System.Drawing.Size(90, 22)
+        Me.idTextBox.TabIndex = 31
         '
         'ProductControl13
         '
@@ -428,12 +437,14 @@ Partial Class Form1
         Me.ProductControl1.Size = New System.Drawing.Size(139, 135)
         Me.ProductControl1.TabIndex = 14
         '
-        'idTextBox
+        'productPictureBox
         '
-        Me.idTextBox.Location = New System.Drawing.Point(646, 524)
-        Me.idTextBox.Name = "idTextBox"
-        Me.idTextBox.Size = New System.Drawing.Size(90, 22)
-        Me.idTextBox.TabIndex = 31
+        Me.productPictureBox.Location = New System.Drawing.Point(746, 563)
+        Me.productPictureBox.Name = "productPictureBox"
+        Me.productPictureBox.Size = New System.Drawing.Size(42, 43)
+        Me.productPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.productPictureBox.TabIndex = 32
+        Me.productPictureBox.TabStop = False
         '
         'Form1
         '
@@ -441,6 +452,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ClientSize = New System.Drawing.Size(800, 618)
+        Me.Controls.Add(Me.productPictureBox)
         Me.Controls.Add(Me.idTextBox)
         Me.Controls.Add(Me.buyButton)
         Me.Controls.Add(Me.ProductControl13)
@@ -483,6 +495,7 @@ Partial Class Form1
         CType(Me.qPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.diPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dolPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.productPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -520,4 +533,5 @@ Partial Class Form1
     Friend WithEvents ProductControl16 As ProductControl
     Friend WithEvents buyButton As Button
     Friend WithEvents idTextBox As TextBox
+    Friend WithEvents productPictureBox As PictureBox
 End Class

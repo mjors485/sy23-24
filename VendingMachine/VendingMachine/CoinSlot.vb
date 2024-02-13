@@ -7,12 +7,14 @@
     Public Property dimes As Integer
     Public Property quarters As Integer
     Public Property dollars As Integer
+    Dim _total As Decimal
     Public ReadOnly Property total As Decimal
         Get
-            Return (nickels * 0.05) +
+            _total = (nickels * 0.05) +
                 (dimes * 0.1) +
                 (quarters * 0.25) +
                 (dollars)
+            Return _total
         End Get
     End Property
     Public Sub InsertNickel()
@@ -36,5 +38,17 @@
         dimes = 0
         quarters = 0
         dollars = 0
+    End Sub
+    Public Sub Buy(p As ProductControl)
+        If p.ProductCount > 0 And
+            p.ProductPrice <= _total Then
+            _total = _total - p.ProductPrice
+            p.Buy()
+            CoinReturn()
+            nickels = _total / 0.05
+            dimes = 0
+            quarters = 0
+            dollars = 0
+        End If
     End Sub
 End Class
