@@ -159,9 +159,9 @@ Partial Class Form1
         '
         'returnButton
         '
-        Me.returnButton.Location = New System.Drawing.Point(646, 361)
+        Me.returnButton.Location = New System.Drawing.Point(698, 449)
         Me.returnButton.Name = "returnButton"
-        Me.returnButton.Size = New System.Drawing.Size(90, 32)
+        Me.returnButton.Size = New System.Drawing.Size(90, 43)
         Me.returnButton.TabIndex = 9
         Me.returnButton.Text = "Return"
         Me.returnButton.UseVisualStyleBackColor = True
@@ -169,7 +169,7 @@ Partial Class Form1
         'nPictureBox
         '
         Me.nPictureBox.Image = CType(resources.GetObject("nPictureBox.Image"), System.Drawing.Image)
-        Me.nPictureBox.Location = New System.Drawing.Point(646, 412)
+        Me.nPictureBox.Location = New System.Drawing.Point(602, 400)
         Me.nPictureBox.Name = "nPictureBox"
         Me.nPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.nPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -180,7 +180,7 @@ Partial Class Form1
         'qPictureBox
         '
         Me.qPictureBox.Image = CType(resources.GetObject("qPictureBox.Image"), System.Drawing.Image)
-        Me.qPictureBox.Location = New System.Drawing.Point(646, 461)
+        Me.qPictureBox.Location = New System.Drawing.Point(602, 449)
         Me.qPictureBox.Name = "qPictureBox"
         Me.qPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.qPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -191,7 +191,7 @@ Partial Class Form1
         'diPictureBox
         '
         Me.diPictureBox.Image = CType(resources.GetObject("diPictureBox.Image"), System.Drawing.Image)
-        Me.diPictureBox.Location = New System.Drawing.Point(694, 412)
+        Me.diPictureBox.Location = New System.Drawing.Point(650, 400)
         Me.diPictureBox.Name = "diPictureBox"
         Me.diPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.diPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -202,7 +202,7 @@ Partial Class Form1
         'dolPictureBox
         '
         Me.dolPictureBox.Image = CType(resources.GetObject("dolPictureBox.Image"), System.Drawing.Image)
-        Me.dolPictureBox.Location = New System.Drawing.Point(694, 461)
+        Me.dolPictureBox.Location = New System.Drawing.Point(650, 449)
         Me.dolPictureBox.Name = "dolPictureBox"
         Me.dolPictureBox.Size = New System.Drawing.Size(42, 43)
         Me.dolPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -215,16 +215,16 @@ Partial Class Form1
         Me.buyButton.BackColor = System.Drawing.Color.PaleGreen
         Me.buyButton.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.buyButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.buyButton.Location = New System.Drawing.Point(646, 564)
+        Me.buyButton.Location = New System.Drawing.Point(698, 363)
         Me.buyButton.Name = "buyButton"
-        Me.buyButton.Size = New System.Drawing.Size(90, 42)
+        Me.buyButton.Size = New System.Drawing.Size(90, 80)
         Me.buyButton.TabIndex = 30
         Me.buyButton.Text = "Buy"
         Me.buyButton.UseVisualStyleBackColor = False
         '
         'idTextBox
         '
-        Me.idTextBox.Location = New System.Drawing.Point(646, 524)
+        Me.idTextBox.Location = New System.Drawing.Point(602, 363)
         Me.idTextBox.Name = "idTextBox"
         Me.idTextBox.Size = New System.Drawing.Size(90, 22)
         Me.idTextBox.TabIndex = 31
@@ -439,9 +439,9 @@ Partial Class Form1
         '
         'productPictureBox
         '
-        Me.productPictureBox.Location = New System.Drawing.Point(746, 563)
+        Me.productPictureBox.Location = New System.Drawing.Point(650, 498)
         Me.productPictureBox.Name = "productPictureBox"
-        Me.productPictureBox.Size = New System.Drawing.Size(42, 43)
+        Me.productPictureBox.Size = New System.Drawing.Size(90, 81)
         Me.productPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.productPictureBox.TabIndex = 32
         Me.productPictureBox.TabStop = False
@@ -451,7 +451,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ClientSize = New System.Drawing.Size(800, 618)
+        Me.ClientSize = New System.Drawing.Size(825, 618)
         Me.Controls.Add(Me.productPictureBox)
         Me.Controls.Add(Me.idTextBox)
         Me.Controls.Add(Me.buyButton)
