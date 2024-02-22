@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.spinButton = New System.Windows.Forms.Button()
         Me.r1Label = New System.Windows.Forms.Label()
         Me.r2Label = New System.Windows.Forms.Label()
@@ -29,13 +30,18 @@ Partial Class Form1
         Me.ReelControl3 = New Slot_Machine.ReelControl()
         Me.ReelControl1 = New Slot_Machine.ReelControl()
         Me.ReelControl2 = New Slot_Machine.ReelControl()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.doButton = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'spinButton
         '
         Me.spinButton.BackColor = System.Drawing.SystemColors.Info
         Me.spinButton.Font = New System.Drawing.Font("Century Gothic", 25.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.spinButton.Location = New System.Drawing.Point(142, 278)
+        Me.spinButton.Location = New System.Drawing.Point(27, 278)
         Me.spinButton.Name = "spinButton"
         Me.spinButton.Size = New System.Drawing.Size(234, 100)
         Me.spinButton.TabIndex = 1
@@ -105,12 +111,63 @@ Partial Class Form1
         Me.ReelControl2.spinTime = 2000
         Me.ReelControl2.TabIndex = 3
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Location = New System.Drawing.Point(352, 278)
+        Me.Label1.Name = "Label1"
+        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label1.Size = New System.Drawing.Size(137, 44)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "Label1"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(269, 278)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(64, 58)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 16
+        Me.PictureBox4.TabStop = False
+        '
+        'doButton
+        '
+        Me.doButton.Location = New System.Drawing.Point(269, 342)
+        Me.doButton.Name = "doButton"
+        Me.doButton.Size = New System.Drawing.Size(64, 28)
+        Me.doButton.TabIndex = 12
+        Me.doButton.Text = "Dollar"
+        Me.doButton.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Location = New System.Drawing.Point(352, 326)
+        Me.Label2.Name = "Label2"
+        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Label2.Size = New System.Drawing.Size(137, 44)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Label2"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(537, 450)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.doButton)
         Me.Controls.Add(Me.r3Label)
         Me.Controls.Add(Me.r2Label)
         Me.Controls.Add(Me.ReelControl3)
@@ -120,6 +177,7 @@ Partial Class Form1
         Me.Controls.Add(Me.spinButton)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -131,4 +189,8 @@ Partial Class Form1
     Friend WithEvents ReelControl3 As ReelControl
     Friend WithEvents r2Label As Label
     Friend WithEvents r3Label As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents doButton As Button
+    Friend WithEvents Label2 As Label
 End Class

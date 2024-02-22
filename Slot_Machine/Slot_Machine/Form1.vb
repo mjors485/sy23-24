@@ -1,15 +1,28 @@
 ﻿Public Class Form1
-    Dim nickels As Decimal
-    Dim dimes As Decimal
-    Dim quarters As Decimal
-    Dim dollars As Decimal
+    Dim dollars As Integer
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles spinButton.Click
-        ReelControl1.Spin()
-        ReelControl2.Spin()
-        ReelControl3.Spin()
-        r1Label.Text = ReelControl1.itemValue
-        r2Label.Text = ReelControl2.itemValue
-        r3Label.Text = ReelControl3.itemValue
+        If dollars >= 1 Then
+            dollars -= 1
+            Label1.Text = dollars.ToString("c2")
+            ReelControl1.Spin()
+            ReelControl2.Spin()
+            ReelControl3.Spin()
+            r1Label.Text = ReelControl1.itemValue
+            r2Label.Text = ReelControl2.itemValue
+            r3Label.Text = ReelControl3.itemValue
+        End If
+
+        If ReelControl1.itemValue = ReelControl2.itemValue And
+            ReelControl2.itemValue = ReelControl3.itemValue Then
+            Label2.Text = "WIN"
+        Else
+            Label2.Text = "LOSE"
+        End If
+    End Sub
+
+    Private Sub doButton_Click(sender As Object, e As EventArgs) Handles doButton.Click
+        dollars += 1
+        Label1.Text = dollars.ToString("c2")
     End Sub
 End Class

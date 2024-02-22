@@ -1,6 +1,7 @@
 ﻿Public Class ReelControl
+    Public Event SpinStop()
     Public Property itemValue As Integer
-    Public Property spinTime As Integer = 2000
+    Public Property spinTime As Integer = 5
 
     Dim rand As New Random
 
