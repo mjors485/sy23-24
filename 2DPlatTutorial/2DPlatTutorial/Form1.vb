@@ -1,5 +1,4 @@
 ﻿Imports System.Security.Cryptography
-
 Public Class Form1
     Dim moveSpeed As Integer = 15
     Dim isJumping As Boolean
@@ -44,12 +43,12 @@ Public Class Form1
     End Sub
 
     Private Sub tmrGameLogic_Tick(sender As Object, e As EventArgs) Handles tmrGameLogic.Tick
-        If picPlayer.Bounds.IntersectsWith(picAir.Bounds) Then
+        If picPlayer.Bounds.IntersectsWith(picGround.Bounds) Then
+            tmrGravity.Stop()
+        Else
             If isJumping = False Then
                 tmrGravity.Start()
             End If
-        ElseIf picPlayer.Bounds.IntersectsWith(picGround.bounds) Then
-            tmrGravity.Stop()
         End If
 
         For Each b As Control In Me.Controls
@@ -59,9 +58,29 @@ Public Class Form1
                         tmrGravity.Stop()
                     End If
                 End If
+
+                If b.Tag = "win" And picPlayer.Visible = True Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) And b.Visible = True Then
+                        Label1.Text = Label1.Text + 1
+                        b.Visible = False
+                    End If
+                End If
+
+                If Label1.Text = "6" Then
+                    picPlayer.Visible = False
+                    picAir.BackColor = Color.Green
+                    Label1.Text = "YOU WIN!"
+                End If
+
+                If b.Tag = "lose" Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                        picPlayer.Visible = False
+                        picAir.BackColor = Color.Red
+                        Label1.Text = "YOU LOSE!"
+                    End If
+                End If
             End If
         Next
-
     End Sub
 
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
