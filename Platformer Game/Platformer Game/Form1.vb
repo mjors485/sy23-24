@@ -86,6 +86,16 @@
                         Label2.Visible = True
                     End If
                 End If
+                If b.Tag = "coin1" Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                        PictureBox9.Visible = False
+                    End If
+                End If
+                If b.Tag = "coin2" Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                        PictureBox10.Visible = False
+                    End If
+                End If
             End If
         Next
 
@@ -93,5 +103,9 @@
 
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picPlayer.Top += movespeed
+    End Sub
+
+    Private Sub Mover3_Load(sender As Object, e As EventArgs) Handles Mover3.Load
+
     End Sub
 End Class
