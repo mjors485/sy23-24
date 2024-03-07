@@ -1,7 +1,7 @@
 ﻿Public Class Frm2DPlatformer
     Dim movespeed As Integer = 15
     Dim isJumping As Boolean
-    Private Sub Frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+    Private Sub Frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
         Select Case e.KeyCode
             Case Keys.Right
                 tmrRight.Start()
@@ -20,7 +20,7 @@
 
         End Select
     End Sub
-    Private Sub Frm2DPlatformer_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
+    Private Sub Frm2DPlatformer_KeyUp(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyUp
         Select Case e.KeyCode
             Case Keys.Right
                 tmrRight.Stop()
@@ -88,11 +88,17 @@
                 End If
                 If b.Tag = "coin1" Then
                     If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                        If PictureBox9.Visible = True Then
+                            Label3.Text = Label3.Text + 1
+                        End If
                         PictureBox9.Visible = False
                     End If
                 End If
                 If b.Tag = "coin2" Then
                     If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                        If PictureBox10.Visible = True Then
+                            Label3.Text = Label3.Text + 1
+                        End If
                         PictureBox10.Visible = False
                     End If
                 End If
@@ -106,6 +112,10 @@
     End Sub
 
     Private Sub Mover3_Load(sender As Object, e As EventArgs) Handles Mover3.Load
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 End Class

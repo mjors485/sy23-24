@@ -40,16 +40,17 @@ Partial Class Frm2DPlatformer
         Me.picPlayer = New System.Windows.Forms.PictureBox()
         Me.picGround = New System.Windows.Forms.PictureBox()
         Me.picAir = New System.Windows.Forms.PictureBox()
-        Me.Mover1 = New Platformer_Game.Mover()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.Mover2 = New Platformer_Game.Mover()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Mover3 = New Platformer_Game.Mover()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.Mover4 = New Platformer_Game.Mover()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Mover4 = New Platformer_Game.Mover()
+        Me.Mover3 = New Platformer_Game.Mover()
+        Me.Mover1 = New Platformer_Game.Mover()
+        Me.Mover2 = New Platformer_Game.Mover()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -202,22 +203,11 @@ Partial Class Frm2DPlatformer
         Me.picAir.TabIndex = 1
         Me.picAir.TabStop = False
         '
-        'Mover1
-        '
-        Me.Mover1.BackColor = System.Drawing.Color.Transparent
-        Me.Mover1.interval = 100
-        Me.Mover1.Location = New System.Drawing.Point(852, 480)
-        Me.Mover1.Name = "Mover1"
-        Me.Mover1.Size = New System.Drawing.Size(228, 110)
-        Me.Mover1.speed = 10
-        Me.Mover1.sprite = Me.PictureBox11
-        Me.Mover1.TabIndex = 15
-        '
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.Color.Red
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(1064, 471)
+        Me.PictureBox11.Location = New System.Drawing.Point(1082, 600)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(48, 47)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -225,22 +215,11 @@ Partial Class Frm2DPlatformer
         Me.PictureBox11.TabStop = False
         Me.PictureBox11.Tag = "enemy"
         '
-        'Mover2
-        '
-        Me.Mover2.BackColor = System.Drawing.Color.Transparent
-        Me.Mover2.interval = 100
-        Me.Mover2.Location = New System.Drawing.Point(267, 276)
-        Me.Mover2.Name = "Mover2"
-        Me.Mover2.Size = New System.Drawing.Size(239, 101)
-        Me.Mover2.speed = 10
-        Me.Mover2.sprite = Me.PictureBox6
-        Me.Mover2.TabIndex = 17
-        '
         'PictureBox6
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Red
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(377, 266)
+        Me.PictureBox6.Location = New System.Drawing.Point(507, 386)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(48, 47)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -259,45 +238,23 @@ Partial Class Frm2DPlatformer
         Me.PictureBox7.TabStop = False
         Me.PictureBox7.Tag = "enemy"
         '
-        'Mover3
-        '
-        Me.Mover3.BackColor = System.Drawing.Color.Transparent
-        Me.Mover3.interval = 100
-        Me.Mover3.Location = New System.Drawing.Point(24, 416)
-        Me.Mover3.Name = "Mover3"
-        Me.Mover3.Size = New System.Drawing.Size(256, 106)
-        Me.Mover3.speed = 10
-        Me.Mover3.sprite = Me.PictureBox9
-        Me.Mover3.TabIndex = 20
-        '
         'PictureBox9
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.Yellow
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(282, 468)
+        Me.PictureBox9.Location = New System.Drawing.Point(284, 506)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(48, 47)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 21
         Me.PictureBox9.TabStop = False
-        Me.PictureBox9.Tag = "coin"
-        '
-        'Mover4
-        '
-        Me.Mover4.BackColor = System.Drawing.Color.Transparent
-        Me.Mover4.interval = 100
-        Me.Mover4.Location = New System.Drawing.Point(639, 159)
-        Me.Mover4.Name = "Mover4"
-        Me.Mover4.Size = New System.Drawing.Size(119, 340)
-        Me.Mover4.speed = 10
-        Me.Mover4.sprite = Me.PictureBox10
-        Me.Mover4.TabIndex = 22
+        Me.PictureBox9.Tag = "coin1"
         '
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.Color.Yellow
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(630, 481)
+        Me.PictureBox10.Location = New System.Drawing.Point(629, 439)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(48, 47)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -312,12 +269,70 @@ Partial Class Frm2DPlatformer
         Me.TextBox1.Size = New System.Drawing.Size(193, 22)
         Me.TextBox1.TabIndex = 24
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Gold
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label3.Location = New System.Drawing.Point(272, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(50, 54)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "0"
+        '
+        'Mover4
+        '
+        Me.Mover4.BackColor = System.Drawing.Color.Transparent
+        Me.Mover4.interval = 100
+        Me.Mover4.Location = New System.Drawing.Point(639, 159)
+        Me.Mover4.Name = "Mover4"
+        Me.Mover4.Size = New System.Drawing.Size(119, 340)
+        Me.Mover4.speed = 10
+        Me.Mover4.sprite = Me.PictureBox10
+        Me.Mover4.TabIndex = 22
+        '
+        'Mover3
+        '
+        Me.Mover3.BackColor = System.Drawing.Color.Transparent
+        Me.Mover3.interval = 100
+        Me.Mover3.Location = New System.Drawing.Point(24, 416)
+        Me.Mover3.Name = "Mover3"
+        Me.Mover3.Size = New System.Drawing.Size(256, 106)
+        Me.Mover3.speed = 10
+        Me.Mover3.sprite = Me.PictureBox9
+        Me.Mover3.TabIndex = 20
+        '
+        'Mover1
+        '
+        Me.Mover1.BackColor = System.Drawing.Color.Transparent
+        Me.Mover1.interval = 100
+        Me.Mover1.Location = New System.Drawing.Point(852, 480)
+        Me.Mover1.Name = "Mover1"
+        Me.Mover1.Size = New System.Drawing.Size(228, 110)
+        Me.Mover1.speed = 10
+        Me.Mover1.sprite = Me.PictureBox11
+        Me.Mover1.TabIndex = 15
+        '
+        'Mover2
+        '
+        Me.Mover2.BackColor = System.Drawing.Color.Transparent
+        Me.Mover2.interval = 100
+        Me.Mover2.Location = New System.Drawing.Point(267, 276)
+        Me.Mover2.Name = "Mover2"
+        Me.Mover2.Size = New System.Drawing.Size(239, 101)
+        Me.Mover2.speed = 10
+        Me.Mover2.sprite = Me.PictureBox6
+        Me.Mover2.TabIndex = 17
+        '
         'Frm2DPlatformer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PaleTurquoise
         Me.ClientSize = New System.Drawing.Size(1149, 746)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.picPlayer)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.Mover4)
@@ -336,7 +351,6 @@ Partial Class Frm2DPlatformer
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.picPlayer)
         Me.Controls.Add(Me.picGround)
         Me.Controls.Add(Me.picAir)
         Me.Name = "Frm2DPlatformer"
@@ -386,4 +400,5 @@ Partial Class Frm2DPlatformer
     Friend WithEvents Mover4 As Mover
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label3 As Label
 End Class
