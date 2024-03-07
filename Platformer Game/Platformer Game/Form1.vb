@@ -80,12 +80,17 @@
                 End If
                 If b.Tag = "enemy" Then
                     If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
-                        tmrGravity.Stop()
-                        picPlayer.Visible = False
-                        Label2.Text = "You Lose"
-                        Label2.Visible = True
+                        If picPlayer.Visible = True Then
+                            Label3.Text = Label3.Text - 1
+                        End If
+                        If Label3.Text = -1 = True Then
+                                tmrGravity.Stop()
+                                picPlayer.Visible = False
+                                Label2.Text = "You Lose"
+                                Label2.Visible = True
+                            End If
+                        End If
                     End If
-                End If
                 If b.Tag = "coin1" Then
                     If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
                         If PictureBox9.Visible = True Then
@@ -94,6 +99,7 @@
                         PictureBox9.Visible = False
                     End If
                 End If
+
                 If b.Tag = "coin2" Then
                     If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
                         If PictureBox10.Visible = True Then
