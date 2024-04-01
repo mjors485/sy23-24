@@ -1,0 +1,12 @@
+Ethan did most of the coding and I did most of the organization.
+
+By organization, I refer to the placement and choice of images,
+colors used, and general user interface and experience stuff.
+
+I also planned out the prices for each item based on searches on
+the interenet.
+
+I did minor coding for additional things here and there but not a lot,
+all updates shown in the gitkracken screenshot show the general
+divison of work, although we sometimes worked together on the same
+computer.
