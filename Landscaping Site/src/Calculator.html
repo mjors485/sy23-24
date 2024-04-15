@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar with Banner -->
+    <div class="navbar">
+        <div class="banner">
+            <h1 class="title" onclick="toggleSpin()">Landscaping Calculator</h1>
+        </div>
+        <a href="Calculator.html">Calculator</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Testimonials.html">Testimonials</a>
+    </div>
+
+    <!-- Main Content -->
+    <div style="margin-top: 130px; padding: 20px;">
+        <label for="width">Width:</label>
+        <input type="number" id="width" onchange="calculate()">
+        <label for="length">Length:</label>
+        <input type="number" id="length" onchange="calculate()">
+        <br><br>
+
+        <!-- Floor type options -->
+        <label><b>Floor Type:</b></label><br>
+
+        <!-- Gravel -->
+        <label>
+            <input type="radio" name="floorType" value="gravel" onchange="calculate()">Gravel <br>
+            <img src="../img/GravelFloor.jpg"> <br> ($2 per sq ft)
+        </label> <br> <br>
+        <!-- Rock -->
+        <label>
+            <input type="radio" name="floorType" value="rock" onchange="calculate()"> Rock <br>
+            <img src="../img/RockFloor.jpg"> <br> ($5 per sq ft)
+        </label> <br> <br>
+        <!-- Grass -->
+        <label>
+            <input type="radio" name="floorType" value="grass" onchange="calculate()"> Grass <br>
+            <img src="../img/RealGrass.jpeg"> <br> ($1 per sq ft)
+        </label> <br> <br>
+        <!-- Fake Grass -->
+        <label>
+            <input type="radio" name="floorType" value="fakegrass" onchange="calculate()"> Fake Grass <br>
+            <img src="../img/FakeGrass.jpg"> <br> ($10 per sq ft)
+        </label> <br> <br>
+
+        <!-- Backyard items options -->
+        <label><b>Backyard Items:</b></label><br>
+
+        <!-- Pool -->
+        <label>
+            <input type="checkbox" id="pool" onchange="calculate()"> Pool <br>
+            <img src="../img/Pool.png"> <br> ($50,000)
+        </label> <br> <br>
+        <!-- Basketball court -->
+        <label>
+            <input type="checkbox" id="basketballCourt" onchange="calculate()"> Basketball Court <br>
+            <img src="../img/BasketballCourt.png"> <br> ($2,500)
+        </label> <br> <br>
+        <!-- Garden -->
+        <label>
+            <input type="checkbox" id="garden" onchange="calculate()"> Garden <br>
+            <img src="../img/Garden.jpeg"> <br> ($2,000)
+        </label> <br> <br>
+        <!-- Playground -->
+        <label>
+            <input type="checkbox" id="playground" onchange="calculate()"> Playground <br>
+            <img src="../img/Playground.png"> <br> ($1,000)
+        </label> <br> <br>
+        <!-- Firepit -->
+        <label>
+            <input type="checkbox" id="firepit" onchange="calculate()"> Firepit <br>
+            <img src="../img/Firepit.png"> <br> ($1,250)
+        </label> <br> <br>
+        <!-- Hot tub -->
+        <label>
+            <input type="checkbox" id="hottub" onchange="calculate()"> Hot Tub <br>
+            <img src="../img/HotTub.png"> <br> ($5,000)
+        </label> <br> <br>
+        <br>
+
+        <label>Area:</label>
+        <input type="text" id="area" readonly>
+        <label>Perimeter:</label>
+        <input type="text" id="perimeter" readonly>
+        <br><br>
+
+        <label for="finalPrice">Final Price:</label>
+        <input type="text" id="finalPrice" readonly>
+    </div>
+
+    <script>
+        // Function to calculate area and perimeter
+        function calculate() {
+            var width = parseInt(document.getElementById("width").value);
+            var length = parseInt(document.getElementById("length").value);
+            var area = 0;
+            var perimeter = 0;
+
+            if (!isNaN(width) && !isNaN(length)) {
+                area = width * length;
+                perimeter = 2 * (width + length);
+            }
+
+            document.getElementById("area").value = area;
+            document.getElementById("perimeter").value = perimeter;
+
+            var floorType = document.querySelector('input[name="floorType"]:checked').value;
+            var floorPrice = 0;
+
+            // Calculate floor price based on selected floor type
+            switch (floorType) {
+                case "gravel":
+                    floorPrice = 2;
+                    break;
+                case "rock":
+                    floorPrice = 5;
+                    break;
+                case "grass":
+                    floorPrice = 1;
+                    break;
+                case "fakegrass":
+                    floorPrice = 10;
+                    break;
+            }
+
+            // Calculate total price of backyard items
+            var totalPrice = 0;
+            if (document.getElementById("pool").checked) totalPrice += 50000;
+            if (document.getElementById("basketballCourt").checked) totalPrice += 2500;
+            if (document.getElementById("garden").checked) totalPrice += 2000;
+            if (document.getElementById("playground").checked) totalPrice += 1000;
+            if (document.getElementById("firepit").checked) totalPrice += 1250;
+            if (document.getElementById("hottub").checked) totalPrice += 5000;
+
+            // Calculate final price including floor and backyard items
+            var finalPrice = area * floorPrice + totalPrice;
+            document.getElementById("finalPrice").value = finalPrice.toFixed(2);
+        }
+    </script>
+
+    <script>
+        // Function to toggle the 'clicked' class for spinning effect
+        function toggleSpin() {
+            var title = document.querySelector('.title');
+            title.classList.toggle('clicked');
+        }
+    </script>
+
+</body>
+</html>

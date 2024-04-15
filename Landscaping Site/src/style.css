@@ -1,0 +1,58 @@
+﻿img {
+    width: 100px
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #294a2e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    /* Style for the navigation links */
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+        /* Change background color of links when hovered */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+.banner {
+    background-color: #294a2e; /* Background color for the banner */
+    color: white; /* Text color for the banner */
+    text-align: center; /* Align text to center */
+    padding: 20px 0; /* Padding for top and bottom */
+}
+
+    .banner h1 {
+        margin: 0; /* Remove default margin */
+    }
+
+.title {
+    transition: transform 0.5s ease-in-out; /* Add transition for smooth animation */
+}
+
+/* Define the spin animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the title when it's clicked */
+.title.clicked {
+    animation: spin 1s linear;
+}
