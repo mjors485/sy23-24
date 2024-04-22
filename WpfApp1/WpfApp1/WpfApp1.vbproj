@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNamespace>WpfPaymentForm</RootNamespace>
+    <RootNamespace>WpfApp1</RootNamespace>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
