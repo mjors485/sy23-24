@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>WpfApp3</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Aquarius_symbol_%28bold%29.svg.png" />
+    <None Remove="Aries_symbol_%28bold%29.svg.png" />
+    <None Remove="Cancer_symbol_%28bold%29.svg.png" />
+    <None Remove="Capricornus_symbol_%28bold%29.svg.png" />
+    <None Remove="Gemini_symbol_%28bold%29.svg.png" />
+    <None Remove="Leo_symbol_%28bold%29.svg.png" />
+    <None Remove="Libra_symbol_%28bold%29.svg.png" />
+    <None Remove="Pisces_symbol_%28bold%29.svg.png" />
+    <None Remove="Sagittarius_symbol_%28bold%29.svg.png" />
+    <None Remove="Scorpius_symbol_%28bold%29.svg.png" />
+    <None Remove="Taurus_symbol_%28bold%29.svg.png" />
+    <None Remove="Virgo_symbol_%28bold%29.svg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+    <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Aquarius_symbol_(bold).svg.png" />
+    <Resource Include="Aries_symbol_(bold).svg.png" />
+    <Resource Include="Cancer_symbol_(bold).svg.png" />
+    <Resource Include="Capricornus_symbol_(bold).svg.png" />
+    <Resource Include="Gemini_symbol_(bold).svg.png" />
+    <Resource Include="Leo_symbol_(bold).svg.png" />
+    <Resource Include="Libra_symbol_(bold).svg.png" />
+    <Resource Include="Pisces_symbol_(bold).svg.png" />
+    <Resource Include="Sagittarius_symbol_(bold).svg.png" />
+    <Resource Include="Scorpius_symbol_(bold).svg.png" />
+    <Resource Include="Taurus_symbol_(bold).svg.png" />
+    <Resource Include="Virgo_symbol_(bold).svg.png" />
+  </ItemGroup>
+
+</Project>
