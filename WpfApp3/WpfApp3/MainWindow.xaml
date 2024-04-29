@@ -10,17 +10,17 @@
         <Calendar x:Name="cal1" HorizontalAlignment="Left" Margin="41,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top" Height="64" Width="271"/>
         <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="246,94,0,0" VerticalAlignment="Top" Height="89" Width="271" FontSize="24"/>
-        <Image x:Name="aquIMG" HorizontalAlignment="Left" Height="100" Margin="20,201,0,0" VerticalAlignment="Top" Width="100" Source="/Aquarius_symbol_(bold).svg.png"/>
-        <Image x:Name="ariIMG" HorizontalAlignment="Left" Height="100" Margin="156,201,0,0" VerticalAlignment="Top" Width="100" Source="/Aries_symbol_(bold).svg.png"/>
-        <Image x:Name="canIMG" HorizontalAlignment="Left" Height="100" Margin="292,201,0,0" VerticalAlignment="Top" Width="100" Source="/Cancer_symbol_(bold).svg.png"/>
-        <Image x:Name="capIMG" HorizontalAlignment="Left" Height="100" Margin="428,201,0,0" VerticalAlignment="Top" Width="100" Source="/Capricornus_symbol_(bold).svg.png"/>
-        <Image x:Name="gemIMG" HorizontalAlignment="Left" Height="100" Margin="20,321,0,0" VerticalAlignment="Top" Width="100" Source="/Gemini_symbol_(bold).svg.png"/>
-        <Image x:Name="leoIMG" HorizontalAlignment="Left" Height="100" Margin="156,321,0,0" VerticalAlignment="Top" Width="100" Source="/Leo_symbol_(bold).svg.png"/>
-        <Image x:Name="libIMG" HorizontalAlignment="Left" Height="100" Margin="292,321,0,0" VerticalAlignment="Top" Width="100" Source="/Libra_symbol_(bold).svg.png"/>
-        <Image x:Name="pisIMG" HorizontalAlignment="Left" Height="100" Margin="428,321,0,0" VerticalAlignment="Top" Width="100" Source="/Pisces_symbol_(bold).svg.png"/>
-        <Image x:Name="sagIMG" HorizontalAlignment="Left" Height="100" Margin="20,455,0,0" VerticalAlignment="Top" Width="100" Source="/Sagittarius_symbol_(bold).svg.png"/>
-        <Image x:Name="scoIMG" HorizontalAlignment="Left" Height="100" Margin="156,455,0,0" VerticalAlignment="Top" Width="100" Source="/Scorpius_symbol_(bold).svg.png"/>
-        <Image x:Name="tauIMG" HorizontalAlignment="Left" Height="100" Margin="292,455,0,0" VerticalAlignment="Top" Width="100" Source="/Taurus_symbol_(bold).svg.png"/>
-        <Image x:Name="virIMG" HorizontalAlignment="Left" Height="100" Margin="428,455,0,0" VerticalAlignment="Top" Width="100" Source="/Virgo_symbol_(bold).svg.png"/>
+        <Image x:Name="aquIMG" HorizontalAlignment="Left" Height="100" Margin="20,201,0,0" VerticalAlignment="Top" Width="100" Source="/Aquarius_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="ariIMG" HorizontalAlignment="Left" Height="100" Margin="156,201,0,0" VerticalAlignment="Top" Width="100" Source="/Aries_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="canIMG" HorizontalAlignment="Left" Height="100" Margin="292,201,0,0" VerticalAlignment="Top" Width="100" Source="/Cancer_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="capIMG" HorizontalAlignment="Left" Height="100" Margin="428,201,0,0" VerticalAlignment="Top" Width="100" Source="/Capricornus_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="gemIMG" HorizontalAlignment="Left" Height="100" Margin="20,321,0,0" VerticalAlignment="Top" Width="100" Source="/Gemini_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="leoIMG" HorizontalAlignment="Left" Height="100" Margin="156,321,0,0" VerticalAlignment="Top" Width="100" Source="/Leo_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="libIMG" HorizontalAlignment="Left" Height="100" Margin="292,321,0,0" VerticalAlignment="Top" Width="100" Source="/Libra_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="pisIMG" HorizontalAlignment="Left" Height="100" Margin="428,321,0,0" VerticalAlignment="Top" Width="100" Source="/Pisces_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="sagIMG" HorizontalAlignment="Left" Height="100" Margin="20,455,0,0" VerticalAlignment="Top" Width="100" Source="/Sagittarius_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="scoIMG" HorizontalAlignment="Left" Height="100" Margin="156,455,0,0" VerticalAlignment="Top" Width="100" Source="/Scorpius_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="tauIMG" HorizontalAlignment="Left" Height="100" Margin="292,455,0,0" VerticalAlignment="Top" Width="100" Source="/Taurus_symbol_(bold).svg.png" Opacity="0"/>
+        <Image x:Name="virIMG" HorizontalAlignment="Left" Height="100" Margin="428,455,0,0" VerticalAlignment="Top" Width="100" Source="/Virgo_symbol_(bold).svg.png" Opacity="0"/>
     </Grid>
 </Window>
