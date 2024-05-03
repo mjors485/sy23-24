@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp4__MyPaint_"
         mc:Ignorable="d"
-        Title="MainWindow" Height="557" Width="844">
+        Title="MainWindow" Height="587" Width="844">
     <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="7*"/>
@@ -28,6 +28,34 @@
         <Button x:Name="elipseButton" Content="Elipse" HorizontalAlignment="Left" Margin="4,325,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
         <Button x:Name="rectangleButton" Content="Rectangle" HorizontalAlignment="Left" Margin="72,325,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
         <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="469,446,0,0" VerticalAlignment="Top" Height="35" Width="172" Grid.Column="1"/>
+        <Rectangle x:Name="color1" HorizontalAlignment="Left" Height="51" Margin="10,364,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.5,0.5" Fill="Black">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="color2" HorizontalAlignment="Left" Height="51" Margin="79,364,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.5,0.5" Fill="Black">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Slider x:Name="r" HorizontalAlignment="Left" Margin="45,433,0,0" VerticalAlignment="Top" Width="93" Maximum="255"/>
+        <Slider x:Name="g" HorizontalAlignment="Left" Margin="45,456,0,0" VerticalAlignment="Top" Width="93" Maximum="255"/>
+        <Slider x:Name="b" HorizontalAlignment="Left" Margin="45,479,0,0" VerticalAlignment="Top" Width="93" Maximum="255"/>
+        <Label Content="R" HorizontalAlignment="Left" Margin="10,429,0,0" VerticalAlignment="Top"/>
+        <Label Content="G" HorizontalAlignment="Left" Margin="10,452,0,0" VerticalAlignment="Top"/>
+        <Label Content="B" HorizontalAlignment="Left" Margin="10,475,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="angleSlider" HorizontalAlignment="Left" Margin="45,502,0,0" VerticalAlignment="Top" Width="93" Maximum="360" Minimum="-360"/>
+        <Label Content="Angle" HorizontalAlignment="Left" Margin="0,498,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

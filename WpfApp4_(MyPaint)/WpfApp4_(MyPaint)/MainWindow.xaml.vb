@@ -1,7 +1,10 @@
 ﻿Imports Microsoft.Win32
 Imports System.IO
+Imports System.Xml
 
 Class MainWindow
+    Dim grad1 As Color
+    Dim grad2 As Color
     Private Sub drawingCanvas_MouseMove(sender As Object, e As MouseEventArgs) Handles drawingCanvas.MouseMove
         If shapeLabel.Content = "Elipse" Then
             Dim el As New Ellipse
@@ -91,5 +94,19 @@ Class MainWindow
 
         Canvas.SetTop(drawingCanvas, 10)
 
+    End Sub
+
+    Private Sub color1_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles color1.MouseDown
+        grad1 = Color.FromRgb(r.Value, g.Value, b.Value)
+        sender.fill = New SolidColorBrush(grad1)
+    End Sub
+
+    Private Sub color2_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles color2.MouseDown
+        grad2 = Color.FromRgb(r.Value, g.Value, b.Value)
+        sender.fill = New SolidColorBrush(grad2)
+    End Sub
+
+    Private Sub angleSlider_ValueChanged(sender As Object, e As RoutedPropertyChangedEventArgs(Of Double)) Handles angleSlider.ValueChanged
+        colorRectangle1.Fill = New LinearGradientBrush(grad1, grad2, angleSlider.Value)
     End Sub
 End Class
