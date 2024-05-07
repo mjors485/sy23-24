@@ -19,15 +19,33 @@ Class MainWindow
             End If
         End If
         If shapeLabel.Content = "Rectangle" Then
-            Dim re As New Rectangle
-            re.Width = widthSlider.Value
-            re.Height = heightSlider.Value
-            re.Fill = colorRectangle1.Fill
+            Dim el As New Rectangle
+            el.Width = widthSlider.Value
+            el.Height = heightSlider.Value
+            el.Fill = colorRectangle1.Fill
             Dim p As Point = Mouse.GetPosition(drawingCanvas)
-            Canvas.SetLeft(re, p.X)
-            Canvas.SetTop(re, p.Y)
+            Canvas.SetLeft(el, p.X)
+            Canvas.SetTop(el, p.Y)
             If e.LeftButton = MouseButtonState.Pressed Then
-                drawingCanvas.Children.Add(re)
+                drawingCanvas.Children.Add(el)
+            End If
+        End If
+        If shapeLabel.Content = "Polygon" Then
+            Dim r As New Polygon
+            r.Fill = colorRectangle1.Fill
+            r.Points.Add(New Point(0, 8))
+            r.Points.Add(New Point(2, 2))
+            r.Points.Add(New Point(8, 0))
+            r.Points.Add(New Point(2, -2))
+            r.Points.Add(New Point(0, -8))
+            r.Points.Add(New Point(-2, -2))
+            r.Points.Add(New Point(-8, 0))
+            r.Points.Add(New Point(-2, 2))
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(r, p.X)
+            Canvas.SetTop(r, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                drawingCanvas.Children.Add(r)
             End If
         End If
     End Sub
@@ -108,5 +126,9 @@ Class MainWindow
 
     Private Sub angleSlider_ValueChanged(sender As Object, e As RoutedPropertyChangedEventArgs(Of Double)) Handles angleSlider.ValueChanged
         colorRectangle1.Fill = New LinearGradientBrush(grad1, grad2, angleSlider.Value)
+    End Sub
+
+    Private Sub polygonButton_Click(sender As Object, e As RoutedEventArgs) Handles polygonButton.Click
+        shapeLabel.Content = "Polygon"
     End Sub
 End Class
