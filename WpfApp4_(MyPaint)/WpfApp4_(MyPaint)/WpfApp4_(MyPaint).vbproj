@@ -131,5 +131,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="appleimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bananaimg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

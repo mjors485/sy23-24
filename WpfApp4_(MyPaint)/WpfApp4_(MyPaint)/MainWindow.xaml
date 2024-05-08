@@ -26,7 +26,7 @@
         <Rectangle x:Name="color5Rectangle" HorizontalAlignment="Left" Height="50" Margin="79,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FFF0DEDE"/>
         <Label x:Name="shapeLabel" Content="Label" HorizontalAlignment="Left" Margin="14,71,0,0" VerticalAlignment="Top" Width="116" FontSize="14"/>
         <Button x:Name="elipseButton" Content="Elipse" HorizontalAlignment="Left" Margin="4,325,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
-        <Button x:Name="rectangleButton" Content="Rectangle" HorizontalAlignment="Left" Margin="72,325,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
+        <Button x:Name="rectangleButton" Content="Rectangle" HorizontalAlignment="Left" Margin="4,369,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
         <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="469,455,0,0" VerticalAlignment="Top" Height="35" Width="172" Grid.Column="1"/>
         <Rectangle x:Name="color1" HorizontalAlignment="Left" Height="51" Margin="10,394,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.5,0.5" Fill="Black">
             <Rectangle.RenderTransform>
@@ -56,7 +56,12 @@
         <Label Content="B" HorizontalAlignment="Left" Margin="10,505,0,0" VerticalAlignment="Top"/>
         <Slider x:Name="angleSlider" HorizontalAlignment="Left" Margin="45,532,0,0" VerticalAlignment="Top" Width="93" Maximum="360" Minimum="-360"/>
         <Label Content="Angle" HorizontalAlignment="Left" Margin="0,528,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="polygonButton" Content="Polygon" HorizontalAlignment="Left" Margin="4,353,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
-
+        <Button x:Name="polygonButton" Content="Polygon" HorizontalAlignment="Left" Margin="4,347,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
+        <Button x:Name="imgButton"  Canvas.Left="50" Canvas.Top="308" Margin="72,325,44,191">
+            <Image x:Name="apple" Height="20" Canvas.Left="65" Canvas.Top="295" Width="22" Source="/appleimg.png" />
+        </Button>
+        <Button x:Name="imgButton2"  Canvas.Left="50" Canvas.Top="308" Margin="106,325,10,191">
+            <Image x:Name="banana" Height="20" Canvas.Left="65" Canvas.Top="295" Width="22" Source="/bananaimg.png" />
+        </Button>
     </Grid>
 </Window>

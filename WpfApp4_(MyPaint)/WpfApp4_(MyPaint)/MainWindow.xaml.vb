@@ -48,6 +48,32 @@ Class MainWindow
                 drawingCanvas.Children.Add(r)
             End If
         End If
+        If shapeLabel.Content = "Apple" Then
+            Dim myImageBrush As New ImageBrush(apple.Source)
+            Dim myCanvas As New Canvas
+            myCanvas.Width = 100
+            myCanvas.Height = 100
+            myCanvas.Background = myImageBrush
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(myCanvas, p.X)
+            Canvas.SetTop(myCanvas, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                drawingCanvas.Children.Add(myCanvas)
+            End If
+        End If
+        If shapeLabel.Content = "Banana" Then
+            Dim myImageBrush As New ImageBrush(banana.Source)
+            Dim myCanvas As New Canvas
+            myCanvas.Width = 100
+            myCanvas.Height = 100
+            myCanvas.Background = myImageBrush
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(myCanvas, p.X)
+            Canvas.SetTop(myCanvas, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                drawingCanvas.Children.Add(myCanvas)
+            End If
+        End If
     End Sub
 
     Private Sub color2Rectangle_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles color2Rectangle.MouseDown, color1Rectangle.MouseDown, color3Rectangle.MouseDown, color4Rectangle.MouseDown, color5Rectangle.MouseDown
@@ -130,5 +156,13 @@ Class MainWindow
 
     Private Sub polygonButton_Click(sender As Object, e As RoutedEventArgs) Handles polygonButton.Click
         shapeLabel.Content = "Polygon"
+    End Sub
+
+    Private Sub imgButton_Click(sender As Object, e As RoutedEventArgs) Handles imgButton.Click
+        shapeLabel.Content = "Apple"
+    End Sub
+
+    Private Sub imgButton2_Click(sender As Object, e As RoutedEventArgs) Handles imgButton2.Click
+        shapeLabel.Content = "Banana"
     End Sub
 End Class
