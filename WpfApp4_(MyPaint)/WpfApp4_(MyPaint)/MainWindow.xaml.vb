@@ -1,5 +1,6 @@
 ﻿Imports Microsoft.Win32
 Imports System.IO
+Imports System.Windows.Threading
 Imports System.Xml
 
 Class MainWindow
@@ -33,14 +34,14 @@ Class MainWindow
         If shapeLabel.Content = "Polygon" Then
             Dim r As New Polygon
             r.Fill = colorRectangle1.Fill
-            r.Points.Add(New Point(0, 8))
-            r.Points.Add(New Point(2, 2))
-            r.Points.Add(New Point(8, 0))
-            r.Points.Add(New Point(2, -2))
-            r.Points.Add(New Point(0, -8))
-            r.Points.Add(New Point(-2, -2))
-            r.Points.Add(New Point(-8, 0))
-            r.Points.Add(New Point(-2, 2))
+            r.Points.Add(New Point(0, 8 * (widthSlider.Value * 0.25)))
+            r.Points.Add(New Point(2 * (widthSlider.Value * 0.25), 2 * (widthSlider.Value * 0.25)))
+            r.Points.Add(New Point(8 * (widthSlider.Value * 0.25), 0))
+            r.Points.Add(New Point(2 * (widthSlider.Value * 0.25), -2 * (widthSlider.Value * 0.25)))
+            r.Points.Add(New Point(0, -8 * (widthSlider.Value * 0.25)))
+            r.Points.Add(New Point(-2 * (widthSlider.Value * 0.25), -2 * (widthSlider.Value * 0.25)))
+            r.Points.Add(New Point(-8 * (widthSlider.Value * 0.25), 0))
+            r.Points.Add(New Point(-2 * (widthSlider.Value * 0.25), 2 * (widthSlider.Value * 0.25)))
             Dim p As Point = Mouse.GetPosition(drawingCanvas)
             Canvas.SetLeft(r, p.X)
             Canvas.SetTop(r, p.Y)
@@ -51,6 +52,8 @@ Class MainWindow
         If shapeLabel.Content = "Apple" Then
             Dim myImageBrush As New ImageBrush(apple.Source)
             Dim myCanvas As New Canvas
+            myCanvas.Width = widthSlider.Value
+            myCanvas.Height = heightSlider.Value
             myCanvas.Width = 100
             myCanvas.Height = 100
             myCanvas.Background = myImageBrush
@@ -72,6 +75,19 @@ Class MainWindow
             Canvas.SetTop(myCanvas, p.Y)
             If e.LeftButton = MouseButtonState.Pressed Then
                 drawingCanvas.Children.Add(myCanvas)
+            End If
+        End If
+        If shapeLabel.Content = "Custom" Then
+            Dim r As New Polygon
+            r.Fill = colorRectangle1.Fill
+            r.Points.Add(New Point(0, 0))
+            r.Points.Add(New Point(1 * widthSlider.Value, 0))
+            r.Points.Add(New Point(0, 1))
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(r, p.X)
+            Canvas.SetTop(r, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                drawingCanvas.Children.Add(r)
             End If
         End If
     End Sub
@@ -164,5 +180,9 @@ Class MainWindow
 
     Private Sub imgButton2_Click(sender As Object, e As RoutedEventArgs) Handles imgButton2.Click
         shapeLabel.Content = "Banana"
+    End Sub
+
+    Private Sub customButton_Click(sender As Object, e As RoutedEventArgs) Handles customButton.Click
+        shapeLabel.Content = "Custom"
     End Sub
 End Class

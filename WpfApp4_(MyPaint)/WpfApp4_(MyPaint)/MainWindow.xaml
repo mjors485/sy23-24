@@ -12,21 +12,21 @@
             <ColumnDefinition Width="33*"/>
         </Grid.ColumnDefinitions>
         <Canvas x:Name="drawingCanvas" Margin="3,0,55,121" Grid.Column="1" Width="638.31" Height="426.041">
-            <Rectangle Height="426" Stroke="Black" Width="638" Fill="#FFF0DEDE" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Rectangle x:Name="rec1" Height="426" Stroke="Black" Width="638" Fill="#FFF0DEDE" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         </Canvas>
         <Rectangle x:Name="colorRectangle1" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="Black"/>
         <Slider x:Name="widthSlider" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Width="120" Minimum="5" Maximum="50"/>
         <Slider x:Name="heightSlider" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="120" Minimum="5" Maximum="50"/>
-        <Rectangle x:Name="color2Rectangle" HorizontalAlignment="Left" Height="50" Margin="79,193,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FFC93636"/>
-        <Rectangle x:Name="color3Rectangle" HorizontalAlignment="Left" Height="50" Margin="10,260,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FF36C95F"/>
-        <Rectangle x:Name="color4Rectangle" HorizontalAlignment="Left" Height="50" Margin="79,260,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FF3694C9"/>
-        <Rectangle x:Name="color1Rectangle" HorizontalAlignment="Left" Height="50" Margin="10,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="Black"/>
+        <Rectangle x:Name="color2Rectangle" HorizontalAlignment="Left" Height="50" Margin="70,505,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FFC93636" Grid.Column="1"/>
+        <Rectangle x:Name="color3Rectangle" HorizontalAlignment="Left" Height="50" Margin="131,505,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FF36C95F" Grid.Column="1"/>
+        <Rectangle x:Name="color4Rectangle" HorizontalAlignment="Left" Height="50" Margin="197,504,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FF3694C9" Grid.Column="1"/>
+        <Rectangle x:Name="color1Rectangle" HorizontalAlignment="Left" Height="50" Margin="10,505,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="Black" Grid.Column="1"/>
         <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" Margin="10,455,0,0" VerticalAlignment="Top" Height="35" Width="172" Grid.Column="1"/>
         <Button x:Name="undoButton" Content="Undo" HorizontalAlignment="Left" Margin="236,455,0,0" VerticalAlignment="Top" Height="35" Width="172" Grid.Column="1"/>
         <Rectangle x:Name="color5Rectangle" HorizontalAlignment="Left" Height="50" Margin="79,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" Fill="#FFF0DEDE"/>
         <Label x:Name="shapeLabel" Content="Label" HorizontalAlignment="Left" Margin="14,71,0,0" VerticalAlignment="Top" Width="116" FontSize="14"/>
-        <Button x:Name="elipseButton" Content="Elipse" HorizontalAlignment="Left" Margin="4,325,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
-        <Button x:Name="rectangleButton" Content="Rectangle" HorizontalAlignment="Left" Margin="4,369,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
+        <Button x:Name="elipseButton" Content="Elipse" HorizontalAlignment="Left" Margin="4,260,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
+        <Button x:Name="rectangleButton" Content="Rectangle" HorizontalAlignment="Left" Margin="76,260,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
         <Button x:Name="saveButton" Content="Save" HorizontalAlignment="Left" Margin="469,455,0,0" VerticalAlignment="Top" Height="35" Width="172" Grid.Column="1"/>
         <Rectangle x:Name="color1" HorizontalAlignment="Left" Height="51" Margin="10,394,0,0" Stroke="Black" VerticalAlignment="Top" Width="51" RenderTransformOrigin="0.5,0.5" Fill="Black">
             <Rectangle.RenderTransform>
@@ -56,12 +56,13 @@
         <Label Content="B" HorizontalAlignment="Left" Margin="10,505,0,0" VerticalAlignment="Top"/>
         <Slider x:Name="angleSlider" HorizontalAlignment="Left" Margin="45,532,0,0" VerticalAlignment="Top" Width="93" Maximum="360" Minimum="-360"/>
         <Label Content="Angle" HorizontalAlignment="Left" Margin="0,528,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="polygonButton" Content="Polygon" HorizontalAlignment="Left" Margin="4,347,0,0" VerticalAlignment="Top" Width="64" FontSize="10"/>
-        <Button x:Name="imgButton"  Canvas.Left="50" Canvas.Top="308" Margin="72,325,44,191">
+        <Button x:Name="polygonButton" Content="Polygon" HorizontalAlignment="Left" Margin="4,186,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Height="31"/>
+        <Button x:Name="imgButton"  Canvas.Left="50" Canvas.Top="308" Margin="73,186,44,330">
             <Image x:Name="apple" Height="20" Canvas.Left="65" Canvas.Top="295" Width="22" Source="/appleimg.png" />
         </Button>
-        <Button x:Name="imgButton2"  Canvas.Left="50" Canvas.Top="308" Margin="106,325,10,191">
+        <Button x:Name="imgButton2"  Canvas.Left="50" Canvas.Top="308" Margin="109,186,8,330">
             <Image x:Name="banana" Height="20" Canvas.Left="65" Canvas.Top="295" Width="22" Source="/bananaimg.png" />
         </Button>
+        <Button x:Name="customButton" Content="Custom" HorizontalAlignment="Left" Margin="4,222,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Height="31"/>
     </Grid>
 </Window>
